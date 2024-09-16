@@ -28,3 +28,12 @@
     border: none;  
     cursor: pointer;
 }
+@media (max-width: 500px) 
+{
+    .NavBar .bar1{
+        display: none;        
+    }
+    .NavBar .bar2{
+        margin-left: 13%;
+    }
+}

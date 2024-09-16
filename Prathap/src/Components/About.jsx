@@ -19,19 +19,35 @@ const About = () => {
       <h2>Actions I'm Taking</h2>
       <div className="actions">
         <div className="card">
-        Problem Solving
+        <img src="ps.png" alt="" className="image"/>
+        <div className="caption">
+          <h3>Problem Solving</h3>
+          <label htmlFor="">Challenging the Problem in coding platforms</label>
+        </div>
         </div>
         <div className="card">
-    Web Development
+        <img src="coding.png" alt="" className="image"/>
+        <div className="caption">
+          <h3>Web Development</h3>
+          <label htmlFor="">Developing the high quality web sites with the professional level</label>
+        </div>
         </div>
         
       </div>
       <div className="actions">
-        <div className="card">
-        Innovative thing
+      <div className="card">
+        <img src="inno.png" alt="" className="image"/>
+        <div className="caption">
+          <h3>Innovative thing</h3>
+          <label htmlFor="">Challenging the Problem in coding platforms</label>
+        </div>
         </div>
         <div className="card">
-        Video Game
+        <img src="fire.png" alt="" className="image"/>
+        <div className="caption">
+          <h3>Video Game</h3>
+          <label htmlFor="">high-speed thrills and compete against other drivers in a variety of races and challenges</label>
+        </div>
         </div>
         
       </div>

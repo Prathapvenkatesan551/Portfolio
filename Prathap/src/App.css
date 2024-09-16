@@ -2,9 +2,14 @@
     display: flex;
     margin-top: 4%;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right:5%;
     margin-bottom: 4%;
     justify-content: space-between;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    width: 90%;
+    gap: 10px;
+    
 }
 .profile{
     display: flex;
@@ -18,7 +23,7 @@
     border-radius: 5px;
     color: aliceblue;
     padding: 10px;
-    
+    /* position: fixed; */
     gap: 5px;
 }
 .profile .DP{
@@ -106,4 +111,25 @@
 }
 .pages{
     width: 73%;
+}
+
+
+@media (max-width: 780px) 
+{
+    .container{
+        flex-wrap: wrap;
+     
+    }
+    .pages{
+        width: 100%;
+    }
+   
+    @media (max-width: 500px) 
+    {
+    .profile{
+        width: 100%;
+    }
+    
+}
+
 }

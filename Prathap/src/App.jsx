@@ -2,6 +2,7 @@
 import './App.css'
 import About from './Components/About'
 import NavBar from './Components/NavBar'
+import Resume from './Components/Resume'
 
 function App() {
   return (
@@ -42,7 +43,8 @@ function App() {
 
       </div>
       <div className='pages'>
-        <About/>
+        {/* <About/> */}
+        <Resume/>
       </div>
       </div>
     </>
