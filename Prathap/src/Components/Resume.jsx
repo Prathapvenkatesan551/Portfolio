@@ -133,6 +133,38 @@ const Resume = () => {
           <h2>Data Structures</h2>
         </div>
       </div>
+      <br />
+      <div className="head1">
+        <h1>Skills Achivements</h1>
+        <img src="degree.png" alt="" className="degree" />
+      </div>
+      <br />
+      <div className="skillsAchieved">
+        <div className="sa-skills">
+            <img src="leetcode.png" alt="" className="sa-skill" />
+            <label htmlFor="">Leetcode</label>
+            <div className="leet-level">
+                <p>Problem Solving</p>
+                </div>
+            <button>view</button>
+        </div>
+        <div className="sa-skills">
+            <img src="github.png" alt="" className="sa-skill" />
+            <label htmlFor="">Git Hub</label>
+            <div className="leet-level">
+                <p>Problem Solving</p>
+                </div>
+            <button>view</button>
+        </div>
+            <div className="sa-skills">
+                <img src="hackerrank.png" alt="" className="sa-skill" />
+                <label htmlFor="">Hackerrank</label>
+                <div className="leet-level">
+                    <p>Problem Solving</p>
+                    </div>
+                <button>view</button>
+            </div>
+      </div>
     </div>
   );
 };
