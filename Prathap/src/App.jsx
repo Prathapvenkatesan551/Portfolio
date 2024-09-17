@@ -3,9 +3,15 @@ import './App.css'
 import About from './Components/About'
 import NavBar from './Components/NavBar'
 import Resume from './Components/Resume'
+// import BubbleEffect from './Components/BubbleEffect'
+import { useState,useEffect } from 'react'
 
 function App() {
 
+  const [state, setState] = useState('About');
+  const [about,setAbout]=useState(true);
+  const [resume,setResume]=useState(false);
+  const [contact,setContact]=useState(false);
   const handleLinkedIn = () => {
      window.open('https://www.linkedin.com/in/prathap-venkatesan-71b633249', '_blank');
   };
@@ -15,11 +21,33 @@ function App() {
   const handleFacebook = () => {
      window.open('https://www.facebook.com/venkateswaran.venkat.129/', '_blank');
   };
-  
+  // Use useEffect to update the state based on `state` variable changes
+  useEffect(() => {
+    if (state === 'About') {
+      setAbout(true);
+      setContact(false);
+      setResume(false);
+    } else if (state === 'Contact') {
+      setAbout(false);
+      setContact(true);
+      setResume(false);
+    } else {
+      setAbout(false);
+      setContact(false);
+      setResume(true);
+    }
+  }, [state]);
   return (
+    
     <>
-      <NavBar/>
+      <NavBar  state={state} setState={setState} />
+
+      
+
       <div className='container'>
+  
+      
+      {!resume &&  
       <div className='profile'>
       <img src="profile.jpg" alt="profile" className='DP' />
       <h3>Prathap V</h3>
@@ -51,11 +79,11 @@ function App() {
       <button onClick={handleFacebook}><img src="facebook.png" alt="" id='sm'/></button>
       </div>
 
-
-      </div>
+      
+      </div>}
       <div className='pages'>
-        {/* <About/> */}
-        <Resume/>
+        {about && <About/>}
+        {resume && <Resume/>}
       </div>
       </div>
     </>

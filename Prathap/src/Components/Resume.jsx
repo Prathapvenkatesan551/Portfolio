@@ -1,7 +1,25 @@
 import React from "react";
 import "./Resume.css";
+import { useState } from "react";
 
 const Resume = () => {
+
+  const [showPopup, setShowPopup] = useState(false);
+  const [popupContent, setPopupContent] = useState('');
+
+  const handleMoreDetails = (project) => {
+    // Set the popup content based on the project
+    if (project === 'MarketPlace') {
+      setPopupContent('Details about the MarketPlace Application...');
+    } else if (project === 'PasswordManager') {
+      setPopupContent('Details about the Password Manager...');
+    }
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
 
   const handleLeetcode=()=>{
     window.open('https://leetcode.com/u/PrathapVenkatesan/','_blank');
@@ -90,31 +108,31 @@ const Resume = () => {
 
       <div className="projects">
         <div className="projectCard">
-          <h3>Market Place</h3>
-          <label htmlFor="">eaaa</label>
-          <label htmlFor="">eaaa</label>
-          <label htmlFor="">eaaa</label>
-          <label htmlFor="">eaaa </label>
-          <label htmlFor="">eaaa </label>
-          <label htmlFor="">eaaa </label>
-          <label htmlFor="">eaaa </label>
+          <h2>MarketPlace Application</h2>
+          <p>Full Stack Project</p>
+          <p>[React js, JavaScript, Spring Boot, MySQL]</p>
+          <button onClick={() => handleMoreDetails('MarketPlace')}>More Details</button>
         </div>
         <div className="projectCard">
-          <h3>Market Place</h3>
-          <label htmlFor="">eaaa</label>
-          <label htmlFor="">eaaa</label>
-          <label htmlFor="">eaaa</label>
-          <label htmlFor="">eaaa </label>
-          <label htmlFor="">eaaa </label>
-          <label htmlFor="">eaaa </label>
-          <label htmlFor="">eaaa </label>
+          <h2>Password Manager</h2>
+          <p>Desktop Application</p>
+          <p>[Java, Java Swing]</p>
+          <button onClick={() => handleMoreDetails('PasswordManager')}>More Details</button>
         </div>
       </div>
-
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+            <span className="close" onClick={closePopup}>&times;</span>
+            <h2>Project Details</h2>
+            <p>{popupContent}</p>
+          </div>
+        </div>
+      )}
       <br />
       <div className="head1">
         <h1>Technical Skills</h1>
-        <img src="degree.png" alt="" className="degree" />
+        {/* <img src="degree.png" alt="" className="degree" /> */}
       </div>
       <br />
       <div className="Tech-skills">
