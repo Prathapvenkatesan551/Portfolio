@@ -2,6 +2,16 @@ import React from "react";
 import "./Resume.css";
 
 const Resume = () => {
+
+  const handleLeetcode=()=>{
+    window.open('https://leetcode.com/u/PrathapVenkatesan/','_blank');
+  }
+  const handleGithub=()=>{
+    window.open('https://github.com/Prathapvenkatesan551','_blank');
+  }
+  const handleHackerrank=()=>{
+    window.open('https://www.hackerrank.com/profile/Prathap2venkate1','_blank');
+  }
   return (
     <div className="resume">
       <h1>Resume</h1>
@@ -146,15 +156,15 @@ const Resume = () => {
             <div className="leet-level">
                 <p>Problem Solving</p>
                 </div>
-            <button>view</button>
+            <button onClick={handleLeetcode}>view</button>
         </div>
         <div className="sa-skills">
             <img src="github.png" alt="" className="sa-skill" />
             <label htmlFor="">Git Hub</label>
             <div className="leet-level">
-                <p>Problem Solving</p>
+                <p>Projects Contribution</p>
                 </div>
-            <button>view</button>
+            <button onClick={handleGithub}>view</button>
         </div>
             <div className="sa-skills">
                 <img src="hackerrank.png" alt="" className="sa-skill" />
@@ -162,7 +172,7 @@ const Resume = () => {
                 <div className="leet-level">
                     <p>Problem Solving</p>
                     </div>
-                <button>view</button>
+                <button onClick={handleHackerrank}>view</button>
             </div>
       </div>
     </div>

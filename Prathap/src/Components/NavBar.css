@@ -36,4 +36,18 @@
     .NavBar .bar2{
         margin-left: 13%;
     }
+    @media (max-width: 500px) 
+{
+    .NavBar .bar2{
+        margin-left:5%;
+        gap: 15px;
+    }
+    .NavBar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+    
 }

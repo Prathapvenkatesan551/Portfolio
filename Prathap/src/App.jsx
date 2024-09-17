@@ -5,6 +5,17 @@ import NavBar from './Components/NavBar'
 import Resume from './Components/Resume'
 
 function App() {
+
+  const handleLinkedIn = () => {
+     window.open('https://www.linkedin.com/in/prathap-venkatesan-71b633249', '_blank');
+  };
+  const handleInstagram = () => {
+     window.open('https://www.instagram.com/prathap_venkatesan/?next=%2F', '_blank');
+  };
+  const handleFacebook = () => {
+     window.open('https://www.facebook.com/venkateswaran.venkat.129/', '_blank');
+  };
+  
   return (
     <>
       <NavBar/>
@@ -35,9 +46,9 @@ function App() {
       </div>
       </div>
       <div className='socialmedia'>
-      <button><img src="linkedin.png" alt="" id='sm'/></button>
-      <button><img src="instagram.png" alt="" id='sm'/></button>
-      <button><img src="facebook.png" alt="" id='sm'/></button>
+      <button onClick={handleLinkedIn}><img src="linkedin.png" alt="" id='sm'/></button>
+      <button onClick={handleInstagram}><img src="instagram.png" alt="" id='sm'/></button>
+      <button onClick={handleFacebook}><img src="facebook.png" alt="" id='sm'/></button>
       </div>
 
 
