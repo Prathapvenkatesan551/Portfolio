@@ -24,7 +24,6 @@
     border-radius: 5px;
     color: aliceblue;
     padding: 10px;
-    /* position: fixed; */
     gap: 5px;
     
 }
@@ -137,4 +136,12 @@
 
 }
 
-
+@media (max-width: 780px) {
+.profile{
+    display: flex;
+    /* gap: 100px; */
+    width: 100%;
+    justify-content: space-between;
+    justify-content: left;
+}
+}

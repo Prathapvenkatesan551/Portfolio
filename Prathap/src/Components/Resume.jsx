@@ -6,11 +6,12 @@ const Resume = () => {
 
   const [showPopup, setShowPopup] = useState(false);
   const [popupContent, setPopupContent] = useState('');
+  let project1='Implemented a Full stack Project On Ecommerce Web application ';
 
   const handleMoreDetails = (project) => {
     // Set the popup content based on the project
     if (project === 'MarketPlace') {
-      setPopupContent('Details about the MarketPlace Application...');
+      setPopupContent('Implemente');
     } else if (project === 'PasswordManager') {
       setPopupContent('Details about the Password Manager...');
     }
@@ -124,7 +125,7 @@ const Resume = () => {
         <div className="popup">
           <div className="popup-content">
             <span className="close" onClick={closePopup}>&times;</span>
-            <h2>Project Details</h2>
+            <h2>MarketPlace Application</h2>
             <p>{popupContent}</p>
           </div>
         </div>
