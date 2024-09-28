@@ -55,9 +55,12 @@
 }
 .box .t-content .content{
     transition-duration: 0.3s;
+    /* transition: transform 7.3s ease, height 12s ease;  */
+    /* transition: transform 0.3s ease, height 7s ease; */
 }
 .box .t-content .content:hover{
     transform: scale(102%);
+    /* height: 600px; */
 }
 .box .t-content::before{
     content: '';

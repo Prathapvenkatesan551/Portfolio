@@ -54,11 +54,9 @@ const Resume = () => {
                   </div>
                   <h3>Bachelor's Degree</h3>
                   <p>
-                    The BE computer science colleges in Bangalore teach the
-                    basics of computer programming and networking and comprise a
-                    plethora of course content. They study programming
-                    languages, program design, computation, design and
-                    development of algorithms, computer software and hardware.
+                    Computer Science and Engineering in Erode Sengunthar Engineering college
+                    ,CGPA : 8.2
+
                   </p>
                 </div>
               </div>
@@ -71,11 +69,8 @@ const Resume = () => {
                   </div>
                   <h3>Higher Secondary 12th</h3>
                   <p>
-                    The BE computer science colleges in Bangalore teach the
-                    basics of computer programming and networking and comprise a
-                    plethora of course content. They study programming
-                    languages, program design, computation, design and
-                    development of algorithms, computer software and hardware.
+                    Bio Maths in Sri Ramakrishna matric higher secondary school,
+                    Percentage : 82.6%
                   </p>
                 </div>
               </div>
@@ -88,11 +83,8 @@ const Resume = () => {
                   </div>
                   <h3>SSLC - 10th</h3>
                   <p>
-                    The BE computer science colleges in Bangalore teach the
-                    basics of computer programming and networking and comprise a
-                    plethora of course content. They study programming
-                    languages, program design, computation, design and
-                    development of algorithms, computer software and hardware.
+                  Muthzamil Government Higher Secondary School ,
+                  Percentage : 68.4%
                   </p>
                 </div>
               </div>
