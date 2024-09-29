@@ -119,6 +119,7 @@ const Resume = () => {
             <span className="close" onClick={closePopup}>&times;</span>
             <h2>MarketPlace Application</h2>
             <p>{popupContent}</p>
+            <button>GitHub</button>
           </div>
         </div>
       )}
